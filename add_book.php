@@ -1,9 +1,9 @@
 <?php
 // Assuming you have a database connection established
 $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "lms";
+$username = "root";
+$password = "";
+$dbname = "lms";
 
 // Create a new PDO instance
 try {
@@ -23,21 +23,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validate the form data (you can add more validation if needed)
     if (!empty($title) && !empty($author) && !empty($quantity)) {
-        try {
-            // Prepare the SQL statement to insert the book into the database
-            $stmt = $conn->prepare("INSERT INTO books (title, author, quantity) VALUES (:title, :author, :quantity)");
-            $stmt->bindParam(':title', $title);
-            $stmt->bindParam(':author', $author);
-            $stmt->bindParam(':quantity', $quantity);
+        // Validate quantity as a positive integer
+        if ($quantity > 0) {
+            try {
+                // Prepare the SQL statement to insert the book into the database
+                $stmt = $conn->prepare("INSERT INTO books (title, author, quantity) VALUES (:title, :author, :quantity)");
+                $stmt->bindParam(':title', $title);
+                $stmt->bindParam(':author', $author);
+                $stmt->bindParam(':quantity', $quantity);
 
-            // Execute the statement
-            $stmt->execute();
+                // Execute the statement
+                $stmt->execute();
 
-            // Set the success message
-            $message = 'Book added successfully.';
-        } catch (PDOException $e) {
-            // Handle the database error
-            $message = 'Error adding the book: ' . $e->getMessage();
+                // Set the success message
+                $message = 'Book added successfully.';
+            } catch (PDOException $e) {
+                // Handle the database error
+                $message = 'Error adding the book: ' . $e->getMessage();
+            }
+        } else {
+            $message = 'Quantity must be a positive value.';
         }
     } else {
         // Handle the case when the form data is incomplete
@@ -49,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add Book</title>
+    <title>Add Book</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -125,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <h1 class="text-center">Add Book</h1>
         <?php
         // Display the message if it's set

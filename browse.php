@@ -84,7 +84,7 @@
                 echo '<td>' . $row['quantity'] . '</td>';
                 echo '<td>';
                 echo '<a href="edit_books.php?id=' . $row['id'] . '" class="btn btn-primary">Update</a>';
-                echo ' <a href="delete_book.php?id=' . $row['id'] . '" class="btn btn-danger" onclick="return confirmDelete()">Delete</a>';
+                echo ' <a href="reserve_book.php?id=' . $row['id'] . '" class="btn btn-success" onclick="return confirmReserve()">Reserve</a>';
                 echo '</td>';
                 echo '</tr>';
             }
@@ -99,14 +99,13 @@
         ?>
     </div>
     <div class="text-center">
-        <a href="admin.php" class="btn btn-primary mt-2">Return to Admin Page</a>
+        <a href="memberpage.php" class="btn btn-primary mt-2">Return to User Page</a>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        function confirmDelete() {
-            return confirm("Do you wish to delete this book?");
+        function confirmReserve() {
+            return confirm("Do you wish to reserve this book?");
         }
-
     </script>
 </body>
 </html>

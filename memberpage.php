@@ -50,7 +50,7 @@
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Browse Books</h2>
         <p class="leading-relaxed text-gray-800 text-base">Browse for Books here.</p>
-        <button class="flex mx-auto mt-6 text-white bg-gray-500 border-0 py-2 px-5 focus:outline-none hover:bg-gray-900 rounded">Browse</button>
+        <button class="flex mx-auto mt-6 text-white bg-gray-500 border-0 py-2 px-5 focus:outline-none hover:bg-gray-900 rounded"><a href="browse.php">Browse</a></button>
       </div>
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
@@ -63,5 +63,8 @@
     </div>
   </div>
 </section>
+<form method="post" action="logout.php" class="text-center">
+    <input type="submit" value="Logout" class="inline-flex items-center mt-6 text-white bg-gray-500 border-0 py-2 px-5 focus:outline-none hover:bg-gray-900 rounded">
+</form>
 </body>
 </html>
