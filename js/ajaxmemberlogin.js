@@ -17,7 +17,7 @@ function login() {
             } else if (data == 1) {
                 $("#statuslogmsg").html('<div class="spinner-border text-success" role="status"></div>');
                 setTimeout(() => {
-                    window.location.href="index.php";
+                    window.location.href="memberpage.php";
                 }, 1000);
             }
         },
