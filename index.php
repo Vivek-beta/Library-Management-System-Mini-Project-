@@ -71,7 +71,7 @@ include('./header.php');
    include('./signup.php');
    ?>
    <script src="js/ajaxrequest(signup/verification).js"> </script>
-   <script src="js/ajaxadmin.js"> </script>
+   <script src="js/ajaxadminlogin.js"> </script>
    <script src="js/ajaxrequest(login/verification).js"> </script>
    <script src="js/popper.min.js"> </script>
     <script src="js/bootstrap.min.js"> </script>

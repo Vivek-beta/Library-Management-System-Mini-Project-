@@ -28,7 +28,7 @@
 </head>
 <body>
   
-    <video autoplay muted loop src="video/library.mp4" class="background" style="filter:opacity(50%);"></video>
+    <video autoplay muted loop src="video/backgvid.mp4" class="background" style="filter:opacity(80%);"></video>
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col">
