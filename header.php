@@ -26,7 +26,7 @@
         <div class="ps-5"><li class="nav-item custom-nav-item "><a href="index.php" class="nav-link">Home</a></li></div>
         <div class="ps-5"><li class="nav-item custom-nav-item"><a href="admin.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#userloginmodel">Login</a></li></div>
         <div class="ps-5"><li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#signupmodel">Sign Up</a></li></div>
-        <div class="ps-5"><li class="nav-item custom-nav-item"><a href="memberpage.php" class="nav-link">Contact</a></li></div>
+        <div class="ps-5"><li class="nav-item custom-nav-item"><a href="contact.php" class="nav-link">Contact</a></li></div>
         <div class="ps-5"><li class="nav-item custom-nav-item"><a href="about.php" class="nav-link">About</a></li></div>
       </ul>
     </div>
