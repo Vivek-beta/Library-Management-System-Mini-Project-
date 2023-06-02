@@ -16,7 +16,7 @@ function adminlogin() {
             } else if (data == 1) {
                 $("#adminlogmsg").html('<div class="spinner-border text-success" role="status"></div>');
                 setTimeout(() => {
-                    adminname();
+                    adminlogin();
                     window.location.href="admin.php";
                 }, 1000);
             }
