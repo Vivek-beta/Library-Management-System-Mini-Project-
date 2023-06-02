@@ -61,7 +61,7 @@
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="image/memer.jpeg">
+              <video  autoplay muted loop alt="content" class="object-cover object-center h-full w-full" src="video/book.mp4">
               </div>
               <h2 class="text-xl text-white font-medium title-font text-gray-900 mt-5">Edit Or View Members</h2>
               <p class="text-base text-gray-200 leading-relaxed mt-2">Here You Can Edit Or View Member Details.</p>
