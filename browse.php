@@ -83,8 +83,7 @@
                 echo '<td>' . $row['author'] . '</td>';
                 echo '<td>' . $row['quantity'] . '</td>';
                 echo '<td>';
-                echo '<a href="edit_books.php?id=' . $row['id'] . '" class="btn btn-primary">Update</a>';
-                echo ' <a href="reserve_book.php?id=' . $row['id'] . '" class="btn btn-success" onclick="return confirmReserve()">Reserve</a>';
+                echo '<a href="reserve_book.php?id=' . $row['id'] . '" class="btn btn-success" onclick="return confirmReserve()">Reserve</a>';
                 echo '</td>';
                 echo '</tr>';
             }
