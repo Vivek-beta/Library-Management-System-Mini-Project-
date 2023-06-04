@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 function addstu() {
-    var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{3,4}$/i;
     var stuname = $("#stuname").val();
     var stuemail = $("#stuemail").val();
     var stupass = $("#stupass").val();
@@ -79,7 +79,7 @@ function addstu() {
             success: function (data) {
                 console.log(data)
                 if (data == "OK") {
-                    $('#successmsg').html("<span class='alert alert-success'>Registration Successful!</span>");
+                    $('#successmsg').html("<span class='alert alert-success'>Registration Successful! Please Close and Login </span>");
                     clearStuRegField()
                 } else if (data == "Fail") {
                     $('#successmsg').html("<span class='alert alert-danger'>Unable to Register!</span>");

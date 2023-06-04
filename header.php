@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/all.min.css">
-    <title>Library Management</title>
+    <title>Library Management System</title>
 </head>
 <body>
     <!-- START NAV -->

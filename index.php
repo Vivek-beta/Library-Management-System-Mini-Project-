@@ -70,9 +70,9 @@ include('./header.php');
    include('./adminlogin.php');
    include('./signup.php');
    ?>
-   <script src="js/ajaxmemberlogin.js"> </script>
+   <script src="js/ajaxrequest(signup/verification).js"> </script>
    <script src="js/ajaxadminlogin.js"> </script>
-   <script src="js/ajaxrequest(login/verification).js"> </script>
+   <script src="js/ajaxmemberlogin.js"> </script>
    <script src="js/popper.min.js"> </script>
     <script src="js/bootstrap.min.js"> </script>
     <script src="js/all.min.js"> </script>
