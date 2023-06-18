@@ -114,7 +114,7 @@ if ($memberId !== null) {
         }
         ?>
         <div class="edit-form">
-            <h2 class="text-center" style="color: white;">Edit Member</h2>
+            <h2 class="text-center" style="color: white;">Edit Member Details</h2>
             <form method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
